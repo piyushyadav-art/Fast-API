@@ -1,0 +1,65 @@
+#Environment setup
+cd ./fastapi-ecommerce
+py -3.11 -m venv fastapi 
+fastapi\Scripts\activate 
+
+#To run app.py
+cd ./app/
+uvicorn main:app --reload
+
+#For finishing program
+click (ctrl+c)
+
+#Main function of fastapi:
+1>Get->Deta ko lana 
+2>Post->create a data
+3>Put->update existing data
+4>Delete->delete data
+
+#For removing outer dataerror
+from fastapi import HTTPException
+
+py -3.11 -m venv fastapi 
+
+#HTTP Methods
+Software->Types>
+1>Static:One way software or single used software
+2>Dynamic:Multi purpose software,Four types of
+ intraction CRUD->{C->Create,R->Retrive,U->Update,D->Delete}
+
+
+#Path()
+the path function in fast api is used to provide metadata,
+ validation rules, and documentation hints for path parameters
+  in your api endpoints.
+such as:
+Title
+Description
+ex:ge,gt,le,lt,Min_length,Max_length,regex etc
+
+#HTTPException is special built-in-exception in fastapi used to return custom http error responses when something goes wrong in your api.
+Create a custom error message with extra headers
+
+#Ouery Parameter:
+this are optional key-value pair append to the end of a url used to pass additional data to server in an http request.They are typically employed for operations like filtering,sorting,searching and pagination,without altering path itself
+
+ex:/patients?city=Delhi&sort_by=age 
+*The ? marks the start of query parameters.
+*Each parameter is a key-value pair:key=value
+*multiple parameters are seperated by &
+
+Query() is a utility function provided by FastAPI to declare, validate and document query parameter in your API endpoints.It allows you to:
+*set default valueen
+*Force validation rules
+*Add matadata like description,title,examples
+like:
+default->add default value
+title
+description
+examples
+min_length,Max_length
+ge,gt,le,lt
+regex
+
+
+

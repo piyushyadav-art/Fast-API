@@ -1,0 +1,19 @@
+They used to help client ,browser, mobile app to understand-> 
+*wether the request was sucessful 
+*wether something wrong.
+*arid what kind of essue occured(if any)
+Types:
+2xx -> Succes -> the request was successfully recieving and processed
+3xx -> Redirection -> Futher action needs to taken(e.g, redirect)
+4xx -> Client Error -> Something went wrong on the server side
+5xx -> Server Error -> Something went wrong on server side
+
+In detail:
+200->OK->Standard success
+201->Created->resource created
+204->No Content->After delete request
+
+400->(Bad Request)Invalid request ->Missing field,wrong datatype
+401->(Unauthorized)No/Invalid authentication ->login required
+403->(Forbidden)Authenricated but no permission->logged in but not allowed
+404->(Not Found)Resource doesn't exist
